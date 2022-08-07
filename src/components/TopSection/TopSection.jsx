@@ -1,6 +1,8 @@
 import React from 'react';
 import { Svgs } from '../../constants';
 
+import './TopSection.css';
+
 const TopSection = () => {
   return (
     <>
@@ -9,11 +11,12 @@ const TopSection = () => {
           <div className="inflab-integrated__container">
             <ul className="inflab-integrated__service">
               <li>
-                <a className="active" href="/">
+                <a className="active after:mx-2 after:w-px after:h-4 after:bg-[#d5dbe2]" href="/">
                   <Svgs.Logo width="20" height="20" />
                   교육
                 </a>
               </li>
+
               <li>
                 <a className="e-gtm-rallit-link" href="https://www.rallit.com">
                   <Svgs.SubLogo width="20" height="20" />

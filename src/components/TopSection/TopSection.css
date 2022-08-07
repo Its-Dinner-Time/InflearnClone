@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inflab-integrated {
+    @apply border border-solid border-[#f1f3f5] h-[40px] text-[14px];
+    @apply flex-center-all;
+  }
+
+  .inflab-integrated header {
+    @apply max-w-[1200px] w-full;
+  }
+
+  .inflab-integrated__container {
+    @apply flex justify-between;
+  }
+
+  .inflab-integrated__service {
+    @apply flex-center-all;
+  }
+  .inflab-integrated__service li {
+    @apply flex-center-all;
+  }
+  .inflab-integrated__service li a {
+    @apply flex-center-all text-[#858a8d];
+  }
+
+  .inflab-integrated__service li a.active {
+    @apply font-bold text-[#1b1c1d];
+  }
+
+  .inflab-integrated__service li a svg {
+    @apply mr-1;
+  }
+
+  .inflab-integrated__links-right {
+    @apply text-[#3e4042];
+  }
+}
