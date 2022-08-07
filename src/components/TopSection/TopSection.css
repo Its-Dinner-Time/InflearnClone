@@ -19,11 +19,18 @@
   .inflab-integrated__service {
     @apply flex-center-all;
   }
+
   .inflab-integrated__service li {
     @apply flex-center-all;
   }
+
   .inflab-integrated__service li a {
     @apply flex-center-all text-[#858a8d];
+  }
+
+  .inflab-integrated__service li .inflab-integrated__seperate {
+    content: '';
+    @apply mx-2 w-px h-4 bg-[#d5dbe2];
   }
 
   .inflab-integrated__service li a.active {

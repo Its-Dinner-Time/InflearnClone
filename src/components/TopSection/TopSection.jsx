@@ -11,7 +11,7 @@ const TopSection = () => {
           <div className="inflab-integrated__container">
             <ul className="inflab-integrated__service">
               <li>
-                <a className="active after:mx-2 after:w-px after:h-4 after:bg-[#d5dbe2]" href="/">
+                <a className="active after:inflab-integrated__seperate" href="/">
                   <Svgs.Logo width="20" height="20" />
                   교육
                 </a>
