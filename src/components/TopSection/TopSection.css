@@ -4,8 +4,8 @@
 
 @layer components {
   .inflab-integrated {
-    @apply border border-solid border-[#f1f3f5] h-[40px] text-[14px];
-    @apply flex-center-all;
+    @apply border border-solid border-[#f1f3f5] h-[40px] text-[14px] px-4;
+    @apply flex-center-center;
   }
 
   .inflab-integrated header {
@@ -17,15 +17,15 @@
   }
 
   .inflab-integrated__service {
-    @apply flex-center-all;
+    @apply flex-center-center;
   }
 
   .inflab-integrated__service li {
-    @apply flex-center-all;
+    @apply flex-center-center;
   }
 
   .inflab-integrated__service li a {
-    @apply flex-center-all text-[#858a8d];
+    @apply flex-center-center text-[#858a8d];
   }
 
   .inflab-integrated__service li .inflab-integrated__seperate {

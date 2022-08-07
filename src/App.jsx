@@ -1,9 +1,10 @@
-import { TopSection } from './components';
+import { TopSection, Navbar } from './components';
 
 function App() {
   return (
     <>
       <TopSection />
+      <Navbar />
     </>
   );
 }
