@@ -22,9 +22,9 @@ const Styled = tw.button`
   ${IsPrimary}
 `;
 
-const Button = ({ children, isPrimary, className }) => {
+const Button = ({ children, isPrimary, ...props }) => {
   return (
-    <Styled $isPrimary={isPrimary && 'isPrimary'} className={className}>
+    <Styled $isPrimary={isPrimary && 'isPrimary'} className={props.className ?? ''} onClick={props.onClick ?? null}>
       {children}
     </Styled>
   );

@@ -5,14 +5,22 @@ import Button from '../../ui/Button';
 import { ButtonList, ButtonListItem } from './RightMenuStyled';
 
 const RightMenu = () => {
+  const LoginClickHandler = (e) => {};
+
+  const SignUpClickHandler = (e) => {};
+
   return (
     <>
       <ButtonList>
         <ButtonListItem>
-          <Button className="mr-3">로그인</Button>
+          <Button className="mr-3" onClick={LoginClickHandler}>
+            로그인
+          </Button>
         </ButtonListItem>
         <ButtonListItem>
-          <Button isPrimary>회원가입</Button>
+          <Button isPrimary onClick={SignUpClickHandler}>
+            회원가입
+          </Button>
         </ButtonListItem>
       </ButtonList>
     </>
