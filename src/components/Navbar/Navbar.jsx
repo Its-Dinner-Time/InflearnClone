@@ -1,14 +1,28 @@
 import React from 'react';
 import { Svgs } from '../../constants';
+import tw from 'tailwind-styled-components';
 
 import LeftMenu from './LeftMenu/LeftMenu';
 import RightMenu from './RightMenu/RightMenu';
 
+const Header = tw.header`
+  flex-center-center
+  px-4
+  py-3
+  shadow-md 
+`;
+
+const Nav = tw.nav`
+  max-w-[1200px] 
+  w-full 
+  flex
+`;
+
 const Navbar = () => {
   return (
     <>
-      <header className="flex-center-center py-3 shadow-md px-4">
-        <nav className="max-w-[1200px] w-full flex">
+      <Header>
+        <Nav>
           {/* brand logo */}
           <div className="flex-center-center pr-2">
             <a href="/">
@@ -24,8 +38,8 @@ const Navbar = () => {
             {/* right menu */}
             <RightMenu />
           </div>
-        </nav>
-      </header>
+        </Nav>
+      </Header>
     </>
   );
 };

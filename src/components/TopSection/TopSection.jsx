@@ -1,38 +1,44 @@
 import React from 'react';
 import { Svgs } from '../../constants';
-
-import './TopSection.css';
+import {
+  Section, //
+  Header,
+  Container,
+  ServiceList,
+  ServiceListItem,
+  ServiceListItemLink,
+} from './Styled';
 
 const TopSection = () => {
   return (
     <>
-      <section className="inflab-integrated">
-        <header>
-          <div className="inflab-integrated__container">
-            <ul className="inflab-integrated__service">
-              <li>
-                <a className="active after:inflab-integrated__seperate" href="/">
-                  <Svgs.Logo width="20" height="20" />
+      <Section>
+        <Header>
+          <Container>
+            <ServiceList>
+              <ServiceListItem>
+                <ServiceListItemLink $active="active" $after="after" href="/">
+                  <Svgs.Logo className="mr-1" width="20" height="20" />
                   교육
-                </a>
-              </li>
+                </ServiceListItemLink>
+              </ServiceListItem>
 
-              <li>
-                <a className="e-gtm-rallit-link" href="https://www.rallit.com">
-                  <Svgs.SubLogo width="20" height="20" />
+              <ServiceListItem>
+                <ServiceListItemLink href={import.meta.env.VITE_REDIRECT_RALLIT}>
+                  <Svgs.SubLogo className="mr-1" width="20" height="20" />
                   채용
-                </a>
-              </li>
-            </ul>
+                </ServiceListItemLink>
+              </ServiceListItem>
+            </ServiceList>
 
-            <ul className="inflab-integrated__links-right">
+            <ul className="text-[#3e4042]">
               <li>
                 <a href="/open-knowledge">지식공유 참여</a>
               </li>
             </ul>
-          </div>
-        </header>
-      </section>
+          </Container>
+        </Header>
+      </Section>
     </>
   );
 };
