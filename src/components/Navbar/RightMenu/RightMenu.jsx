@@ -1,16 +1,20 @@
 import React from 'react';
 
+import Button from '../../ui/Button';
+
+import { ButtonList, ButtonListItem } from './RightMenuStyled';
+
 const RightMenu = () => {
   return (
     <>
-      <ul className="flex-center-center">
-        <li>
-          <button className="button mr-3">로그인</button>
-        </li>
-        <li>
-          <button className="button primary">회원가입</button>
-        </li>
-      </ul>
+      <ButtonList>
+        <ButtonListItem>
+          <Button className="mr-3">로그인</Button>
+        </ButtonListItem>
+        <ButtonListItem>
+          <Button isPrimary>회원가입</Button>
+        </ButtonListItem>
+      </ButtonList>
     </>
   );
 };

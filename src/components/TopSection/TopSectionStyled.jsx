@@ -46,3 +46,12 @@ export const ServiceListItemLink = tw.a`
   ${ServiceListItemLinkActive}
   ${ServiceListItemLinkAfter}
 `;
+
+export const InfoList = tw.ul`
+  text-[#3e4042]
+`;
+export const InfoListItem = tw.li`
+`;
+
+export const InfoListItemLink = tw.a`
+`;

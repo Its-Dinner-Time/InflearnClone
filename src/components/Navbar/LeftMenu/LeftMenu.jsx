@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import { MenuList, MenuListItem, MenuListItemLink } from './LeftMenuStyled';
+
 const LeftMenu = () => {
   const [topCategories, setTopCategories] = useState([]);
 
@@ -18,18 +20,16 @@ const LeftMenu = () => {
 
   return (
     <>
-      <ul className="flex-center-center">
+      <MenuList>
         {topCategories &&
           topCategories.map((item, idx) => {
             return (
-              <li key={idx} className="px-4 py-2">
-                <a href="#" className="text-[#4a4a4a] hover:text-[#00c471] transition ease-out duration-150">
-                  {item}
-                </a>
-              </li>
+              <MenuListItem key={idx}>
+                <MenuListItemLink href="#">{item}</MenuListItemLink>
+              </MenuListItem>
             );
           })}
-      </ul>
+      </MenuList>
     </>
   );
 };

@@ -7,7 +7,10 @@ import {
   ServiceList,
   ServiceListItem,
   ServiceListItemLink,
-} from './Styled';
+  InfoList,
+  InfoListItem,
+  InfoListItemLink,
+} from './TopSectionStyled';
 
 const TopSection = () => {
   return (
@@ -31,11 +34,11 @@ const TopSection = () => {
               </ServiceListItem>
             </ServiceList>
 
-            <ul className="text-[#3e4042]">
-              <li>
-                <a href="/open-knowledge">지식공유 참여</a>
-              </li>
-            </ul>
+            <InfoList>
+              <InfoListItem>
+                <InfoListItemLink href="/open-knowledge">지식공유 참여</InfoListItemLink>
+              </InfoListItem>
+            </InfoList>
           </Container>
         </Header>
       </Section>
